@@ -1,5 +1,5 @@
 {
-  "name": "search-algorithms",
+  "name": "sort-algorithms",
   "type": "module",
   "private": true,
   "scripts": {
@@ -11,9 +11,11 @@
   },
   "dependencies": {
     "@nuxt/eslint": "1.14.0",
+    "@nuxt/ui": "^4.4.0",
     "@pinia/nuxt": "0.11.3",
     "nuxt": "^4.3.1",
     "pinia": "^3.0.4",
+    "tailwindcss": "^4.1.18",
     "vue": "^3.5.27",
     "vue-router": "^4.6.4"
   }
