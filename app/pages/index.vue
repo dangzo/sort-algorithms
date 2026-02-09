@@ -1,5 +1,5 @@
 <template>
-  <div class="container">
+  <div>
     <h1>Sorting Algorithms</h1>
     <p>
       Welcome to the Sorting Algorithms visualization app! Here you can explore
