@@ -1,6 +1,10 @@
 <template>
   <UApp>
-    <UHeader title="Sorting Algorithms" />
+    <UHeader title="Sorting Algorithms">
+      <template #right>
+        <UColorModeButton size="sm" />
+      </template>
+    </UHeader>
 
     <UMain class="p-4">
       <UContainer>
