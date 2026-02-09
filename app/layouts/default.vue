@@ -15,8 +15,9 @@
           href="https://www.github.com/dangzo"
           target="_blank"
           class="text-neutral-950 font-bold no-underline hover:text-primary-600"
-          >dangz0</a
         >
+          dangz0
+        </a>
       </p>
     </UFooter>
   </UApp>

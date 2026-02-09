@@ -32,7 +32,7 @@
       </section>
 
       <section>
-        <h2>But... why is it Called "Big-O"?</h2>
+        <h2>But... why is it called "Big-O"?</h2>
         <p>
           The name comes from the mathematical term "Order of" notation. The "O"
           stands for the order of magnitude of an algorithm's complexity. It's
