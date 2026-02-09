@@ -2,13 +2,223 @@
 @import '@nuxt/ui';
 
 @theme {
-  --font-sans: 'Public Sans', sans-serif;
+  --font-sans:
+    system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica,
+    Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
+  --font-mono:
+    'SF Mono', SF Mono, Consolas, 'Liberation Mono', Menlo, Courier, monospace;
+  --font-base: var(--font-sans);
 }
 
 :root {
-  --ui-bg: white;
+  color-scheme: light;
+  --mono-0: hsl(0 0% 100%);
+  --mono-50: hsl(0 0% 98%);
+  --mono-100: hsl(0 0% 96%);
+  --mono-200: hsl(0 0% 92%);
+  --mono-300: hsl(0 0% 86%);
+  --mono-400: hsl(0 0% 70%);
+  --mono-500: hsl(0 0% 55%);
+  --mono-600: hsl(0 0% 40%);
+  --mono-700: hsl(0 0% 28%);
+  --mono-800: hsl(0 0% 18%);
+  --mono-900: hsl(0 0% 8%);
+
+  --accent: hsl(38 82% 35%);
+  --accent-strong: hsl(38 82% 28%);
+
+  --ui-radius: 0.75rem;
+
+  --ui-color-primary-50: hsl(38 85% 96%);
+  --ui-color-primary-100: hsl(38 85% 92%);
+  --ui-color-primary-200: hsl(38 82% 86%);
+  --ui-color-primary-300: hsl(38 80% 74%);
+  --ui-color-primary-400: hsl(38 80% 58%);
+  --ui-color-primary-500: var(--accent);
+  --ui-color-primary-600: var(--accent-strong);
+  --ui-color-primary-700: hsl(38 82% 24%);
+  --ui-color-primary-800: hsl(38 85% 18%);
+  --ui-color-primary-900: hsl(38 90% 12%);
+  --ui-color-primary-950: hsl(38 90% 8%);
+
+  --ui-color-neutral-50: var(--mono-50);
+  --ui-color-neutral-100: var(--mono-100);
+  --ui-color-neutral-200: var(--mono-200);
+  --ui-color-neutral-300: var(--mono-300);
+  --ui-color-neutral-400: var(--mono-400);
+  --ui-color-neutral-500: var(--mono-500);
+  --ui-color-neutral-600: var(--mono-600);
+  --ui-color-neutral-700: var(--mono-700);
+  --ui-color-neutral-800: var(--mono-800);
+  --ui-color-neutral-900: var(--mono-900);
+  --ui-color-neutral-950: hsl(0 0% 6%);
+
+  --ui-primary: var(--ui-color-primary-600);
+  --ui-secondary: var(--ui-color-neutral-600);
+  --ui-success: var(--ui-color-primary-600);
+  --ui-info: var(--ui-color-primary-500);
+  --ui-warning: var(--ui-color-primary-500);
+  --ui-error: var(--ui-color-primary-600);
+
+  --ui-text: var(--mono-900);
+  --ui-text-muted: var(--mono-600);
+  --ui-text-dimmed: var(--mono-500);
+  --ui-text-toned: var(--mono-700);
+  --ui-text-highlighted: var(--mono-900);
+  --ui-text-inverted: var(--mono-0);
+
+  --ui-bg: var(--mono-50);
+  --ui-bg-muted: var(--mono-100);
+  --ui-bg-elevated: var(--mono-0);
+  --ui-bg-accented: var(--mono-100);
+  --ui-bg-inverted: var(--mono-900);
+
+  --ui-border: var(--mono-200);
+  --ui-border-muted: var(--mono-200);
+  --ui-border-accented: var(--mono-300);
+  --ui-border-inverted: var(--mono-900);
 }
 
 .dark {
-  --ui-bg: black;
+  color-scheme: dark;
+  --mono-0: hsl(0 0% 8%);
+  --mono-50: hsl(0 0% 10%);
+  --mono-100: hsl(0 0% 12%);
+  --mono-200: hsl(0 0% 16%);
+  --mono-300: hsl(0 0% 20%);
+  --mono-400: hsl(0 0% 35%);
+  --mono-500: hsl(0 0% 50%);
+  --mono-600: hsl(0 0% 65%);
+  --mono-700: hsl(0 0% 78%);
+  --mono-800: hsl(0 0% 88%);
+  --mono-900: hsl(0 0% 96%);
+
+  --accent: hsl(38 85% 55%);
+  --accent-strong: hsl(38 85% 65%);
+
+  --ui-color-primary-50: hsl(38 85% 14%);
+  --ui-color-primary-100: hsl(38 85% 18%);
+  --ui-color-primary-200: hsl(38 82% 24%);
+  --ui-color-primary-300: hsl(38 80% 32%);
+  --ui-color-primary-400: hsl(38 80% 42%);
+  --ui-color-primary-500: var(--accent);
+  --ui-color-primary-600: var(--accent-strong);
+  --ui-color-primary-700: hsl(38 82% 72%);
+  --ui-color-primary-800: hsl(38 85% 82%);
+  --ui-color-primary-900: hsl(38 85% 90%);
+  --ui-color-primary-950: hsl(38 85% 96%);
+
+  --ui-color-neutral-50: var(--mono-50);
+  --ui-color-neutral-100: var(--mono-100);
+  --ui-color-neutral-200: var(--mono-200);
+  --ui-color-neutral-300: var(--mono-300);
+  --ui-color-neutral-400: var(--mono-400);
+  --ui-color-neutral-500: var(--mono-500);
+  --ui-color-neutral-600: var(--mono-600);
+  --ui-color-neutral-700: var(--mono-700);
+  --ui-color-neutral-800: var(--mono-800);
+  --ui-color-neutral-900: var(--mono-900);
+  --ui-color-neutral-950: hsl(0 0% 98%);
+
+  --ui-primary: var(--ui-color-primary-500);
+  --ui-secondary: var(--ui-color-neutral-500);
+  --ui-success: var(--ui-color-primary-500);
+  --ui-info: var(--ui-color-primary-500);
+  --ui-warning: var(--ui-color-primary-500);
+  --ui-error: var(--ui-color-primary-500);
+
+  --ui-text: var(--mono-900);
+  --ui-text-muted: var(--mono-600);
+  --ui-text-dimmed: var(--mono-500);
+  --ui-text-toned: var(--mono-700);
+  --ui-text-highlighted: var(--mono-900);
+  --ui-text-inverted: var(--mono-0);
+
+  --ui-bg: var(--mono-100);
+  --ui-bg-muted: var(--mono-200);
+  --ui-bg-elevated: var(--mono-0);
+  --ui-bg-accented: var(--mono-200);
+  --ui-bg-inverted: var(--mono-900);
+
+  --ui-border: var(--mono-300);
+  --ui-border-muted: var(--mono-200);
+  --ui-border-accented: var(--mono-400);
+  --ui-border-inverted: var(--mono-900);
+}
+
+@layer base {
+  body {
+    @apply bg-white text-neutral-900 antialiased;
+    background-color: var(--mono-50);
+    color: var(--mono-900);
+  }
+
+  h1 {
+    @apply text-4xl font-bold tracking-tight leading-loose my-2;
+  }
+
+  h2 {
+    @apply text-2xl font-semibold tracking-tight leading-loose my-1;
+  }
+
+  h3 {
+    @apply text-xl font-semibold leading-loose;
+  }
+
+  p {
+    @apply text-base my-2;
+    color: var(--mono-700);
+  }
+
+  a {
+    @apply underline underline-offset-4 transition-colors;
+    color: var(--color-neutral-950);
+    text-decoration-color: var(--color-neutral-950);
+    font-weight: 600;
+  }
+
+  a:hover {
+    color: var(--accent-strong);
+    text-decoration-color: var(--accent-strong);
+  }
+
+  code {
+    @apply rounded px-1.5 py-0.5 font-mono text-sm;
+    background-color: var(--mono-100);
+    color: var(--mono-800);
+  }
+
+  pre {
+    @apply overflow-x-auto rounded-lg p-4 text-sm;
+    background-color: var(--mono-100);
+    color: var(--mono-800);
+  }
+
+  hr {
+    border-color: var(--mono-200);
+  }
+
+  ul {
+    @apply list-disc pl-6;
+    color: var(--mono-700);
+  }
+
+  ol {
+    @apply list-decimal pl-6;
+    color: var(--mono-700);
+  }
+
+  li {
+    @apply mb-2;
+  }
+
+  ::selection {
+    background-color: color-mix(in srgb, var(--accent) 30%, transparent);
+  }
+
+  :focus-visible {
+    @apply outline-none ring-2 ring-offset-2;
+    --tw-ring-color: var(--accent);
+    --tw-ring-offset-color: var(--mono-0);
+  }
 }

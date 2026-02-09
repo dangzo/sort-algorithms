@@ -6,5 +6,6 @@
       various sorting algorithms and see how they work step by step.
     </p>
     <p>Use the navigation menu to select an algorithm and start visualizing!</p>
+    <a href="#/algorithms">Explore Algorithms</a>
   </div>
 </template>

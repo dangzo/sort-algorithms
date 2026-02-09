@@ -1,10 +1,10 @@
+<script lang="ts" setup>
+const today = new Date();
+</script>
+
 <template>
   <UApp>
-    <UHeader title="Sorting Algorithms">
-      <template #right>
-        <UColorModeButton size="sm" />
-      </template>
-    </UHeader>
+    <AppHeader />
 
     <UMain class="p-4">
       <UContainer>
@@ -13,47 +13,15 @@
     </UMain>
 
     <UFooter>
-      <template #left> &copy; 2024 Sorting Algorithms </template>
-
-      <template #right>
-        <ULink
-          to="mailto:dangz.dev@gmail.com"
-          title="Send E-Mail"
+      <p class="text-neutral-950 text-sm">
+        &copy; {{ today.getFullYear() }} Sorting Algorithms by
+        <a
+          href="https://www.github.com/dangzo"
           target="_blank"
+          class="text-neutral-950 font-bold no-underline hover:text-primary-600"
+          >dangz0</a
         >
-          <UIcon name="i-simple-icons-gmail" size="18" class="ml-1" />
-        </ULink>
-
-        <ULink
-          to="https://www.linkedin.com/in/dangz/"
-          title="View on LinkedIn"
-          target="_blank"
-        >
-          <UIcon
-            name="i-simple-icons-linkedin"
-            size="18"
-            class="ml-1"
-            title="View author LinkedIn"
-            target="_blank"
-            aria-label="LinkedIn"
-          />
-        </ULink>
-
-        <ULink
-          to="https://github.com/dangzo/sort-algorithms"
-          title="View on GitHub"
-          target="_blank"
-        >
-          <UIcon
-            name="i-simple-icons-github"
-            size="18"
-            class="ml-1"
-            title="GitHub repository"
-            target="_blank"
-            aria-label="GitHub"
-          />
-        </ULink>
-      </template>
+      </p>
     </UFooter>
   </UApp>
 </template>
