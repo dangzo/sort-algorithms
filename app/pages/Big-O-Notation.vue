@@ -1,5 +1,5 @@
 <template>
-  <div class="max-w-3xl mx-auto p-8 space-y-10">
+  <article class="max-w-3xl mx-auto p-8 space-y-10">
     <PageTitle>Big-O Notation</PageTitle>
 
     <div class="flex flex-col gap-8">
@@ -158,7 +158,7 @@
         </div>
       </section>
     </div>
-  </div>
+  </article>
 </template>
 
 <script setup>

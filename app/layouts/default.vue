@@ -1,7 +1,3 @@
-<script lang="ts" setup>
-const today = new Date();
-</script>
-
 <template>
   <UApp>
     <AppHeader />
@@ -25,3 +21,7 @@ const today = new Date();
     </UFooter>
   </UApp>
 </template>
+
+<script lang="ts" setup>
+const today = new Date();
+</script>
