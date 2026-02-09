@@ -1,7 +1,5 @@
 <template>
-  <article class="max-w-3xl mx-auto p-8 space-y-10">
-    <PageTitle>Big-O Notation</PageTitle>
-
+  <Article title="Big-O Notation">
     <div class="flex flex-col gap-8">
       <section>
         <h2>What is Big-O Notation?</h2>
@@ -158,7 +156,7 @@
         </div>
       </section>
     </div>
-  </article>
+  </Article>
 </template>
 
 <script setup>
