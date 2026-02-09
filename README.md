@@ -1,10 +1,21 @@
 # Sort Algorithms
 
-Popular sort algorithms written using OOP on top of Nuxt.js.
+Demonstration of popular sorting algorithms using a slow-paced animation.
 
-## Todo
+Code written using OOP on top of Nuxt.js.
 
-- [ ] ...empty
+## Sorting algorithms
+
+- Bubble sort
+- Bucket sort
+- Counting sort
+- Quicksort
+- Insertion sort
+- Heap sort
+- Merge sort
+- Radix sort
+- Selection sort
+- Shell sort
 
 ## Setup
 
