@@ -52,6 +52,7 @@ const toc = [
     pageName: 'Bucket sort',
     href: '/bubble-sort',
   },
-  { pageName: 'Counting sort', href: '/bubble-sort' },
+  { pageName: 'Counting sort', href: '/counting-sort' },
+  { pageName: 'Playground', href: '/playground' },
 ];
 </script>
