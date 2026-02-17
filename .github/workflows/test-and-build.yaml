@@ -1,10 +1,10 @@
-name: Run Unit Tests on branch push
-on: ['push']
+name: Run Unit Tests on pull request
+on: ['pull_request']
 
 jobs:
-  unit_test-build:
+  unit_tests:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      - run: |
-          yarn run test:unit
+      - run: yarn install
+      - run: yarn run test:unit
