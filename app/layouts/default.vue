@@ -1,6 +1,6 @@
 <template>
   <UApp>
-    <AppHeader />
+    <Header />
 
     <UMain class="p-4">
       <UContainer>
