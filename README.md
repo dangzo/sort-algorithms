@@ -1,8 +1,6 @@
 # Sort Algorithms
 
-Demonstration of popular sorting algorithms using a slow-paced animation.
-
-Code written using OOP on top of Nuxt.js.
+Explanation of popular sorting algorithms using a slow-paced animation.
 
 ## Sorting algorithms
 
@@ -45,4 +43,14 @@ Locally preview production build:
 
 ```bash
 yarn preview
+```
+
+Run unit tests:
+
+```bash
+yarn test:unit
+```
+
+```bash
+yarn test:unit:watch
 ```
