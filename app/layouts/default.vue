@@ -16,7 +16,7 @@
           target="_blank"
           class="text-neutral-950 font-bold no-underline hover:text-primary-600"
         >
-          dangz0
+          {{ authorName }}
         </a>
       </p>
     </UFooter>
@@ -25,4 +25,6 @@
 
 <script lang="ts" setup>
 const today = new Date();
+
+const { name: authorName } = useName({ initialName: 'dangz0' });
 </script>
