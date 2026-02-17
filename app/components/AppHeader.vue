@@ -1,7 +1,9 @@
 <template>
   <UHeader>
     <template #left>
-      <h1 class="text-lg font-bold">Sorting Algorithms</h1>
+      <h1 class="text-lg font-bold">
+        <NuxtLink to="/">Sorting Algorithms</NuxtLink>
+      </h1>
     </template>
 
     <template #right>

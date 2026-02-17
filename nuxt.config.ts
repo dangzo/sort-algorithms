@@ -33,4 +33,11 @@ export default defineNuxtConfig({
       stylistic: true,
     },
   },
+
+  runtimeConfig: {
+    apiSecret: 'its_a_secret',
+    public: {
+      apiBase: 'https://api.example.com',
+    },
+  },
 });

@@ -3,7 +3,7 @@ interface UseNameParams {
 }
 
 export const useName = (params: UseNameParams = {}) => {
-  const name = useState('name', () => params.initialName ?? '');
+  const name = useState<string>('name', () => params.initialName ?? '');
 
   function updateName(newName: string) {
     name.value = newName;
