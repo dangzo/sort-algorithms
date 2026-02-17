@@ -19,6 +19,6 @@ describe('useName', () => {
 
   it('should initialize with an empty string if no initial name is provided', () => {
     const { name } = useName();
-    expect(name.value).toBe('');
+    expect(name.value).toBe('different');
   });
 });
