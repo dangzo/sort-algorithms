@@ -1,5 +1,6 @@
 import { describe, it, expect, beforeEach } from 'vitest';
 import { useName } from './useName';
+import { clearNuxtState } from 'nuxt/app';
 
 describe('useName', () => {
   beforeEach(() => {

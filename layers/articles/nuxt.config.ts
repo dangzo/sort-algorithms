@@ -1,3 +1,1 @@
-export default defineNuxtConfig({
-  extends: ['~'],
-});
+export default defineNuxtConfig({});

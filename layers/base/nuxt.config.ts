@@ -1,4 +1,1 @@
-export default defineNuxtConfig({
-  // extends core layer
-  extends: ['~'],
-});
+export default defineNuxtConfig({});
